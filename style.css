@@ -13,7 +13,7 @@ body {
 }
 
 .formContainer {
-  height: 120vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,5 +107,28 @@ input[type=text]:focus {
   position: absolute;
   z-index: 5;
   background: black;
-  padding:5px;
+  padding: 5px;
+}
+
+::placeholder {
+  color: rgba(211, 211, 211, 0.8);
+  font-style: italic;
+  padding-left: 0.75rem;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.univBadge {
+  position: relative;
+  top: 20rem;
+  left: 10rem;
+}
+
+@media screen and (max-width : 90rem) {
+  .formContainer{
+    height: 60vh;
+  }
 }
