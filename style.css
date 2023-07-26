@@ -12,7 +12,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(1px);
-
 }
 
 .formContainer {
@@ -121,13 +120,17 @@ input[type=text]:focus {
   padding-left: 0.75rem;
 }
 
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  
+}
+
 .univBadge {
-  position: absolute;
-  top: 20rem;
-  left: 10rem;
+  margin-top: 20rem;
+  margin-left: 2.2rem;
   width: 18rem;
   height: 18rem;
-  background: rgba(27, 65, 39, 0.6);
   border-radius: 50%;
   border: 5px double yellow;
   display: flex;
@@ -135,8 +138,8 @@ input[type=text]:focus {
   justify-content: center;
   align-items: center;
   text-align: center;
-  animation: badgeAnimation 10s infinite;
-
+  animation: badgeAnimation 5s infinite;
+  backdrop-filter: blur(1px);
 }
 
 .unvBadgeText {
@@ -169,7 +172,6 @@ input[type=text]:focus {
 @media screen and (max-width : 90rem) {}
 
 @keyframes badgeAnimation {
-
   0% {
     background-color: rgb(3, 60, 38);
   }
