@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-image: url('student.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  background-color: lightblue;
+}
+
+.formContainer {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testForm {
+  display: inline-block;
+  width: 30rem;
+
+}
+
+.formHeading {
+  background-color: maroon;
+  padding: 1rem 2rem;
+  color: aliceblue;
+  box-shadow: 2px 4px 4px 0px darkgrey;
+}
+
+.legendFont {
+  background: #008000;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.fieldItems {
+  padding: 2rem;
+  border: 1px solid;
+  border-radius: 4px;
+  background-image: url('form-bg.jpg');
+  background-size: cover;
+}
+
+.submitBtn {
+  font-family: 'Raleway';
+}
+
+input[type=text] {
+  width: 100%;
+  height: 2.2rem;
+}
+
+input[type=email] {
+  width: 100%;
+  height: 2.2rem;
+}
+
+input[type=number] {
+  width: 100%;
+  height: 2.2rem;
+}
+
+input[type=date] {
+  width: 100%;
+  height: 2.2rem;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+input[type=text]:focus {
+  border: 1px lightgray !important;
+}
+
+.submitBtn {
+  border: none;
+  background: #50C878;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  transition: ease-in-out 0.5s;
+  color: #f2f2f2;
+  font-size: 14px;
+}
+
+.submitBtn:hover {
+  transform: scaleX(1.07);
+  cursor: pointer;
+  color: #fff;
+  background-color: #008000;
+  font-size: 15px;
+}
+
+.error {
+  color: red;
+}
+
+#subject-error {
+  position: absolute;
+  z-index: 5;
+  background: black;
+  padding:5px;
+}

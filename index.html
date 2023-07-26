@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Form with CSS animation</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+</head>
+<body>
+  <div class="formContainer">
+    <h1 class="formHeading">Fill-out the form below to register as a Student</h1><br><br>
+    <form action="registration.html" class="testForm" id="registrationForm">
+      <fieldset class="fieldItems">
+        <legend><b class="legendFont">Student Registration Form</b></legend>
+
+        <label for="fname">First Name</label><br>
+        <input type="text" name="firstName" id="f_name"><br><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="lastName" id="l_name"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email_addr"><br><br>
+
+        <label for="phone">Phone Number</label><br>
+        <input type="number" name="phone" id="phone_number"><br><br>
+
+        <label for="birthDate">Birth Date</label><br>
+        <input type="date" name="birth_date" id="b_date"><br><br>
+
+        <label for="">Your Message(Optional)</label><br>
+        <textarea name="msg" id="msg" cols="30" rows="5"></textarea><br><br>
+
+        <label for="">Select your subjects <br></label><br><br>
+        <input type="checkbox" id="sub1" name="subject" value="English">
+        <label for="subject1"> English</label><br>
+        <input type="checkbox" id="sub2" name="subject" value="Math">
+        <label for="subject2"> Math</label><br>
+        <input type="checkbox" id="sub3" name="subject" value="Science">
+        <label for="subject3"> Science</label><br><br>
+
+        <input type="submit" value="Submit Form" class="submitBtn" id="submit_btn"><br>
+      </fieldset>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
