@@ -218,37 +218,44 @@ input[type=text]:focus {
     justify-content: center;
   }
 
+  .formHeading {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
   .univBadge {
     margin-top: 0;
     margin-left: 0;
+    margin-bottom: 1rem;
   }
 }
 
 @media screen and (max-width : 492px) {
 
-    .testForm{
-      width: 90%;
-    }
+  .testForm {
+    width: 90%;
+  }
 
 }
-  @keyframes badgeAnimation {
-    0% {
-      background-color: rgb(3, 60, 38);
-    }
 
-    25% {
-      background-color: rgb(84, 84, 5);
-    }
-
-    50% {
-      background-color: green;
-    }
-
-    75% {
-      background-color: brown;
-    }
-
-    100% {
-      background-color: rgb(166, 0, 255);
-    }
+@keyframes badgeAnimation {
+  0% {
+    background-color: rgb(3, 60, 38);
   }
+
+  25% {
+    background-color: rgb(84, 84, 5);
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  75% {
+    background-color: brown;
+  }
+
+  100% {
+    background-color: rgb(166, 0, 255);
+  }
+}
